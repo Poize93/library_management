@@ -1,0 +1,48 @@
+.createView{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:#d4cecd;
+}
+
+
+.UpdtFunction{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.display{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 30px;
+  margin-bottom: 0px;;
+  background-color: bisque;
+  height:50px;
+  
+}
+
+.image{
+  background:url("https://thumbs.dreamstime.com/b/row-old-books-dark-background-banner-isolated-224303481.jpg");
+  height:200px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.button{
+  background-color: blue;
+  color: white;
+  font-size:20px;
+}
+
+
+.FieldError{
+  color:red;
+}
+
