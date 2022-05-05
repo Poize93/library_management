@@ -16,6 +16,7 @@ import Book from './Book';
 import Delete from './Delete';
 import Edit_Book from './Edit_Book';
 
+
 export default function RouterComponent() {
   const [library, setLibrary]=useState([]);
   const [book, setBook]=useState([])
@@ -31,6 +32,7 @@ return (
           <Route path="/create-book" element={<CreateBook library={library} setLibrary={setLibrary}/>}></Route>
           <Route path='/book/:id' element={<Book/>}></Route>
           <Route path='/book_edit/:id' element={<Edit_Book library={library} setLibrary={setLibrary}/>}></Route>
+          
           <Route path='/delete/:id' element={<Delete library={library} setLibrary={setLibrary} />}></Route>
         </Routes>
       </BrowserRouter>

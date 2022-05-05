@@ -11,11 +11,22 @@ export default function Book(){
   const navigate=useNavigate();
   const {id}=useParams();    
 
-  useEffect(async()=>{
-    const  response= await axios.get(`https://62152ebccdb9d09717b0e6f5.mockapi.io/Library/${id}` );
-          setBook(response.data)
-          console.log(response.data,"checking my input")
-  },[])
+  useEffect( ()=>{
+    (async() => {
+      
+      const  response= await axios.get(`https://62152ebccdb9d09717b0e6f5.mockapi.io/Library/${id}` );
+     setBook(response.data) 
+     console.log(response.data)
+    }) ();
+     
+ },[]);
+
+
+
+  // useEffect(async()=>{
+   
+  //          console.log(response.data,"checking my input")
+  // },[])
   // const responseFunction = async ()=>{  
   //       const  response= await axios.get(`https://62152ebccdb9d09717b0e6f5.mockapi.io/Library/${id}` );
   //         setBook(response.data)
